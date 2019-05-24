@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html >
+<head>
+	<meta charset="utf-8">
+	<title>Asistencia</title>
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/dhtmlxscheduler.css"> -->
+	<link rel="stylesheet" type="text/css" href="libs/css/base.css">
+	<link rel="stylesheet" type="text/css" href="libs/css/main.css">
+
+	<style type="text/css" >
+	html, body{
+		margin:0px;
+		padding:0px;
+		height:100%;
+		overflow:hidden;
+	}	
+</style>
+
+</head>
+<body ng-app="asiste" class="no-skin" onLoad="window.moveTo(0,0);window.resizeTo(screen.availWidth, screen.availHeight);">
+
+	<div class=dashboard-page> 
+	<div class=container-flngd> 
+		<div class=row> 
+			<div class="col-sm-3 col-md-2 sidebar" style="/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2849cc+0,2989d8+49,7db9e8+94,7db9e8+99,7db9e8+100 */
+			background: rgb(40,73,204); /* Old browsers */
+			background: -moz-linear-gradient(top, rgba(40,73,204,1) 0%, rgba(41,137,216,1) 49%, rgba(125,185,232,1) 94%, rgba(125,185,232,1) 99%, rgba(125,185,232,1) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top, rgba(40,73,204,1) 0%,rgba(41,137,216,1) 49%,rgba(125,185,232,1) 94%,rgba(125,185,232,1) 99%,rgba(125,185,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, rgba(40,73,204,1) 0%,rgba(41,137,216,1) 49%,rgba(125,185,232,1) 94%,rgba(125,185,232,1) 99%,rgba(125,185,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2849cc', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */"> 
+				<div class=text-center> 
+				<img src="libs/images/iujo.jpg" style="width: 130px; height: 60px;" class="user-avatar">
+					<h2 class=brand>Asistencia<small> Docente</small></h2> 
+					<img src="libs/images/logo.jpg" class="user-avatar">
+					<br> 
+				</div> 
+				
+			</div> 
+		<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" ng-view> 
+		
+		</div> 
+		</div> 
+	</div> 
+</div>
+
+	<!-- <header class="navbar navbar-inverse" ng-controller="navegacionController"> 	
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#!/">		{{config.nombreDelSitio}}		</a>
+			</div>
+		</div>
+	</header> -->
+	<!--  -->
+	<script type="text/javascript" src="libs/angular/angular.min.js"></script>
+	<script type="text/javascript" src="libs/jquery/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="libs/angular/angular-route.js"></script>
+	<!-- <script type="text/javascript" src="https://code.angularjs.org/1.6.3/angular-route.min.js"></script> -->
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="controller/inicio.js"></script>
+	<script type="text/javascript" src="controller/registro.js"></script>
+	<script type="text/javascript" src="controller/demarche.js"></script>
+	<script type="text/javascript" src="controller/stadistic.js"></script>
+	<script type="text/javascript" src="controller/horary.js"></script>
+	<script type="text/javascript" src="controller/calendar.js"></script>
+	<script type="text/javascript" src="libs/jquery/controller.js"></script>
+	<script type="text/javascript" src="libs/js/dhtmlxscheduler.js"></script>
+	<script type="text/javascript" src="libs/jquery/my.js"></script>
+	<!-- CALENDARIO JS -->
+</body>
+</html>

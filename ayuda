@@ -1,0 +1,36 @@
+CALENDARIZACION
+
+
+-almanaque tipo telefono (ALARMA)
+	-agenda
+-trabajar con roles de administracion
+
+
+
+-REJILLAS DE BOOTSTRAP PARA EL HORARIO.
+-probar con validaciones.
+
+
+ng-include="'base.ng.html'"
+
+ng-include="'view/secundaria/menu_base.html'"
+
+if (MONTH (NOW()) = 6) then
+UPDATE asistencia SET id_mes = 58
+WHERE DATE_FORMAT(fecha,  '%m' )= MONTH (NOW());
+end if
+
+http://www.cristalab.com/tutoriales/fechas-con-mysql-c84136l/
+
+//********************		CONSULTA PARA EL EVENTO DE INASISTENCIA
+SET lc_time_names = 'es_MX';
+SELECT DISTINCT a.id_cedula, a.fecha, h.id_dia, e.descripcion, a.acceso, a.id_tipo_asistencia FROM asistencia AS a
+INNER JOIN horario AS h ON h.id_docente = a.id_cedula 
+INNER JOIN entidad AS e ON e.id = h.id_dia
+WHERE DATE_FORMAT(a.fecha, '%d' ) = DAY(NOW()) AND  DATE_FORMAT(now(), '%W' ) = e.descripcion
+
+SET lc_time_names = 'es_MX';
+SELECT DISTINCT a.id_cedula, a.fecha, h.id_dia, e.descripcion, a.acceso, a.id_tipo_asistencia FROM asistencia AS a
+INNER JOIN horario AS h ON h.id_docente = a.id_cedula 
+INNER JOIN entidad AS e ON e.id = h.id_dia
+WHERE DATE_FORMAT(a.fecha, '%d' ) = DAY(NOW()) AND DATE_FORMAT(a.fecha, '%m' ) = MONTH(NOW()) AND DATE_FORMAT(now(), '%W' ) = e.descripcion
